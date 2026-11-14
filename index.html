@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rohit Singh — software engineer working on C++, systems software, performance engineering and robotics.">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Rohit Singh | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top">Rohit Singh<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-link" href="mailto:rohit4myself@hotmail.com">Get in touch <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER · C++ / SYSTEMS</div>
+      <h1>Building software<br>closer to the <em>metal.</em></h1>
+      <p class="hero-copy">I'm Rohit, a software engineer focused on C++, systems programming and performance engineering. I enjoy understanding how things work under the hood, finding bottlenecks, and making complex systems simpler and faster.</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#work">Explore my work <span>↓</span></a>
+        <a class="text-link" href="https://github.com/rohit4myself" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="text-link" href="https://www.linkedin.com/in/rohit4myself/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="meta-label">CURRENTLY</span><strong>Senior R&D Engineer · Synopsys</strong></div>
+        <div><span class="meta-label">EDUCATION</span><strong>MS(R), IIT Kanpur</strong></div>
+        <div><span class="meta-label">INTERESTS</span><strong>C++ · Performance · Robotics</strong></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section" id="work">
+      <div class="section-heading">
+        <div><div class="eyebrow">01 / EXPERIENCE</div><h2>Engineering in practice</h2></div>
+        <p>Working on foundational software, large codebases and systems where performance and correctness matter.</p>
+      </div>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div><div class="company">Synopsys</div><div class="role">Senior R&D Engineer</div></div>
+          <div class="date">OCT 2024 — PRESENT</div>
+        </div>
+        <p class="experience-intro">Modernizing foundational C++ libraries and platform capabilities used across TCAD products.</p>
+        <div class="work-item">
+          <h3>Container abstraction redesign</h3>
+          <p>Redesigned a foundational key-value container abstraction by removing ordering and uniqueness guarantees that were not required by its consumers. Replaced the tree-based implementation with a flat-container design and coordinated migration across 5+ dependent projects.</p>
+          <div class="metrics"><span>~50% fewer cache misses</span><span>~15% fewer branch misses</span></div>
+          <p class="small-note">Performance figures are from the measured workload; results depend on access patterns and workload characteristics.</p>
+        </div>
+        <div class="work-item">
+          <h3>TCAD workflow backend</h3>
+          <p>Developed backend services and asynchronous execution pipelines for web-based TCAD workflows, using Python, Docker, Kubernetes and MongoDB.</p>
+        </div>
+        <div class="tags"><span>C++</span><span>Performance</span><span>Data structures</span><span>Python</span><span>Docker</span><span>Kubernetes</span></div>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div><div class="company">Ruckus Networks <span class="muted">(CommScope)</span></div><div class="role">Software Engineer</div></div>
+          <div class="date">JUL 2023 — SEP 2024</div>
+        </div>
+        <p class="experience-intro">Developed control-plane and data-plane features in a C-based enterprise switching platform under tight performance and memory constraints.</p>
+        <div class="work-grid">
+          <div class="work-item">
+            <h3>Layer-2 Traceroute</h3>
+            <p>Designed and implemented a Layer-2 path-discovery mechanism for topology debugging and loop detection through custom packet processing.</p>
+          </div>
+          <div class="work-item">
+            <h3>MAC learning at scale</h3>
+            <p>Introduced chunked bulk learning and cooperative CPU yielding to avoid long blocking periods in protocol processing.</p>
+            <div class="metrics"><span>~80% lower CPU utilization</span></div>
+          </div>
+          <div class="work-item">
+            <h3>Protocol convergence</h3>
+            <p>Contributed to PVST-to-RSTP migration, reducing network convergence time from 40 seconds to 5 seconds.</p>
+            <div class="metrics"><span>40s → 5s convergence</span></div>
+          </div>
+          <div class="work-item">
+            <h3>Debugging and reliability</h3>
+            <p>Investigated memory corruption, leaks, race conditions, forwarding and scale issues using GDB, Wireshark, Spirent and core-dump analysis.</p>
+          </div>
+        </div>
+        <div class="tags"><span>C</span><span>Linux</span><span>Networking</span><span>TCP/IP</span><span>GDB</span><span>Wireshark</span></div>
+      </article>
+    </section>
+
+    <section class="section-wrap section" id="projects">
+      <div class="section-heading">
+        <div><div class="eyebrow">02 / SELECTED PROJECTS</div><h2>Things I've built</h2></div>
+        <p>A mix of systems projects, research prototypes and data-oriented coursework. Source links are included wherever available.</p>
+      </div>
+
+      <article class="project-card featured" id="cache">
+        <div class="project-number">PROJECT 01 · C++ / COMPUTER ARCHITECTURE</div>
+        <div class="project-title-row"><h3>Cache Coherence Simulator</h3><a class="round-link" href="https://github.com/rohit4myself/Cache_coherence_simulator" target="_blank" rel="noreferrer" aria-label="Open GitHub repository">↗</a></div>
+        <p class="project-lead">A configurable simulator for studying cache hierarchy behavior and directory-based MESI coherence in multi-core systems.</p>
+        <div class="project-details">
+          <div><h4>What it models</h4><p>Multi-core cache hierarchies with inclusive, exclusive and NINE inclusion policies, alongside directory-based MESI protocol behavior.</p></div>
+          <div><h4>What I implemented</h4><p>LRU and Belady's optimal replacement policies, plus miss classification into cold, conflict and capacity misses using a fully associative reference model.</p></div>
+          <div><h4>Why it matters</h4><p>The simulator makes memory-system behavior observable and provides a way to compare how cache organization and replacement decisions affect workloads.</p></div>
+        </div>
+        <div class="tags"><span>C++</span><span>MESI</span><span>Cache hierarchy</span><span>LRU</span><span>Belady</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">PROJECT 02 · DATA ANALYSIS</div>
+        <div class="project-title-row"><h3>Sharing Profile Analysis for Cache Hierarchies</h3><a class="round-link" href="https://github.com/rohit4myself/-Cache_Hierarchy_Simulation" target="_blank" rel="noreferrer" aria-label="Open GitHub repository">↗</a></div>
+        <p>Explored block-sharing and access-distance patterns across inclusive, exclusive and NINE cache hierarchies. Implemented LRU and Belady replacement policies to study the relationship between sharing behavior and cache organization.</p>
+        <div class="tags"><span>C++</span><span>Computer architecture</span><span>Memory systems</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">PROJECT 03 · GRAPH ANALYSIS</div>
+        <div class="project-title-row"><h3>Connectivity of Wikipedia Articles</h3><a class="round-link" href="https://github.com/rohit4myself/Connectivity-of-Wikipedia-Articles" target="_blank" rel="noreferrer" aria-label="Open GitHub repository">↗</a></div>
+        <p>Analysed user navigation paths and article connectivity to study inter-reachability between user-desired pages, navigation patterns and popularity across article categories.</p>
+        <div class="tags"><span>Python</span><span>Graph analysis</span><span>Data mining</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">PROJECT 04 · DATA SCIENCE</div>
+        <div class="project-title-row"><h3>COVID-19 Data Analysis & Forecasting</h3><a class="round-link" href="https://github.com/rohit4myself/Covid-19_Data-Analysis" target="_blank" rel="noreferrer" aria-label="Open GitHub repository">↗</a></div>
+        <p>Analysed global and India-specific COVID-19 trends, including state-wise spread, travel history and recovery patterns. Explored monthly forecasting using SVR, polynomial linear regression and Bayesian Ridge Regression, comparing models with MAE and MSE.</p>
+        <div class="tags"><span>Python</span><span>Data analysis</span><span>Regression</span><span>Forecasting</span></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-number">PROJECT 05 · APPLIED DATA ANALYSIS</div>
+        <div class="project-title-row"><h3>Births & Infant Mortality Analysis in India</h3><a class="round-link" href="https://github.com/kuldeeps5/Analysis-of-number-of-child-births-and-infant-deaths-in-India" target="_blank" rel="noreferrer" aria-label="Open GitHub repository">↗</a></div>
+        <p>Integrated district-level datasets and analysed spatial and temporal patterns, identifying hot-spot and cold-spot districts and states using the Z-score metric. This was a collaborative course project; the linked repository is hosted under a collaborator's account.</p>
+        <div class="tags"><span>Python</span><span>Statistics</span><span>Geospatial analysis</span></div>
+      </article>
+    </section>
+
+    <section class="research-section" id="research">
+      <div class="section-wrap section">
+        <div class="section-heading">
+          <div><div class="eyebrow">03 / RESEARCH</div><h2>Multi-robot reactive motion planning</h2></div>
+          <p>MS by Research · Computer Science & Engineering · IIT Kanpur · 2020–2023</p>
+        </div>
+        <div class="research-intro">
+          <div>
+            <div class="research-kicker">DRDO-SPONSORED RESEARCH · CAIR, BENGALURU</div>
+            <p class="research-lead">Planning missions for heterogeneous robots when the world does not stay still.</p>
+          </div>
+          <div class="research-links">
+            <a href="https://doi.org/10.1109/ICCPS61052.2024.00023" target="_blank" rel="noreferrer">Read ICCPS 2024 paper ↗</a>
+            <a href="https://www.youtube.com/playlist?list=PLnjT1MiPwkrLX82Oq2IMBchD-KdyuP80K" target="_blank" rel="noreferrer">Research videos ↗</a>
+            <a href="https://www.cse.iitk.ac.in/users/isaha/" target="_blank" rel="noreferrer">Supervisor · Prof. Indranil Saha ↗</a>
+          </div>
+        </div>
+        <div class="research-body">
+          <div class="research-block">
+            <h3>Problem</h3>
+            <p>Given complex Linear Temporal Logic (LTL) mission specifications and a team of heterogeneous robots, generate plans at runtime that satisfy the mission while adapting to changes in the environment. The planning problem also considers response time and the path length travelled by each robot.</p>
+            <p>Environmental constraints included dynamic obstacles, robot battery limitations and intruder or human-presence events.</p>
+          </div>
+          <div class="research-block">
+            <h3>Approach</h3>
+            <p>Developed a runtime framework based on a <strong>Sense–Plan–Act</strong> paradigm. The framework incorporates changes in the environment and generates or updates robot plans while satisfying LTL mission constraints.</p>
+            <p>The simulation setup used ROS and Gazebo with a heterogeneous team of three Husky unmanned ground vehicles (UGVs) and four micro aerial vehicles (MAVs).</p>
+          </div>
+          <div class="research-block">
+            <h3>Robotics integration</h3>
+            <ul>
+              <li>Integrated ZED stereo camera, GPS and 360° LiDAR sensors with NVIDIA Jetson and Intel NUC compute modules on three 0x Delta UGV platforms using ROS.</li>
+              <li>Fused odometry, IMU and GPS measurements using Kalman filters and variants to estimate continuous robot pose indoors and outdoors.</li>
+              <li>Tested PX4 and ArduPilot flight-stack modes on assembled MAV platforms.</li>
+              <li>Configured ROS Navigation Stack components for dynamic point-to-point navigation, including SLAM, A* global planning and the Timed Elastic Band local planner.</li>
+              <li>Demonstrated trajectory generation for point-to-point MAV navigation.</li>
+            </ul>
+          </div>
+          <div class="research-block">
+            <h3>Demonstrations & publication</h3>
+            <p>The work was demonstrated on physical robotic platforms at IIT Kanpur and CAIR-DRDO. The research was published at the ACM/IEEE International Conference on Cyber-Physical Systems (ICCPS 2024).</p>
+            <div class="paper-citation">R. Singh and I. Saha, “An Online Planning Framework for Multi-Robot Systems with LTL Specification,” ACM/IEEE 15th International Conference on Cyber-Physical Systems (ICCPS), Hong Kong, 2024, pp. 180–191.</div>
+          </div>
+        </div>
+        <div class="tags"><span>C++</span><span>Python</span><span>ROS / ROS2</span><span>Gazebo</span><span>LTL</span><span>PX4</span><span>ArduPilot</span><span>Kalman filtering</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section" id="about">
+      <div class="section-heading">
+        <div><div class="eyebrow">04 / ABOUT</div><h2>A little background</h2></div>
+        <p>Systems-minded by work, research-trained by education, and curious by default.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I completed my MS by Research in Computer Science and Engineering at IIT Kanpur, where I worked on formal-methods-driven planning for multi-robot systems. Before that, I studied Information Technology at St. Thomas' College of Engineering & Technology, Kolkata.</p>
+          <p>My professional work has taken me from enterprise networking to TCAD software. Across both, I've gravitated toward foundational components, debugging difficult failures and understanding performance beyond the surface-level symptom.</p>
+          <p>Outside work, I'm interested in systems software, computer architecture, GPU programming and open-source engineering.</p>
+        </div>
+        <div class="education">
+          <div class="education-item"><span class="date">2020 — 2023</span><h3>MS(R), Computer Science & Engineering</h3><p>Indian Institute of Technology, Kanpur</p><span class="detail">GATE 2020 · AIR 449</span></div>
+          <div class="education-item"><span class="date">2016 — 2020</span><h3>B.Tech, Information Technology</h3><p>St. Thomas' College of Engineering & Technology, Kolkata</p></div>
+        </div>
+      </div>
+      <div class="skills">
+        <div><span class="meta-label">LANGUAGES</span><p>C++ · C · Python · Bash</p></div>
+        <div><span class="meta-label">SYSTEMS</span><p>Linux · Concurrency · Memory management · Performance</p></div>
+        <div><span class="meta-label">NETWORKING</span><p>TCP/IP · VLAN · STP/RSTP · LACP</p></div>
+        <div><span class="meta-label">TOOLS & PLATFORMS</span><p>GDB · perf · Wireshark · Spirent · CMake · Docker · Kubernetes · MongoDB</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="section-wrap contact-inner">
+        <div class="eyebrow">HAVE SOMETHING INTERESTING?</div>
+        <h2>Let's talk engineering.</h2>
+        <p>For collaboration, systems discussions or interesting technical problems.</p>
+        <a class="button button-light" href="mailto:rohit4myself@hotmail.com">rohit4myself@hotmail.com <span>↗</span></a>
+        <div class="contact-socials"><a href="https://github.com/rohit4myself" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/rohit4myself/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© <span id="year"></span> Rohit Singh</span><span>Designed to stay simple.</span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
