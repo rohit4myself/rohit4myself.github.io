@@ -19,6 +19,7 @@
       <a href="#projects">Projects</a>
       <a href="#research">Research</a>
       <a href="#about">About</a>
+      <a href="assets/Rohit-Singh-Resume.pdf" download>Resume ↓</a>
     </nav>
     <a class="header-link" href="mailto:rohit4myself@hotmail.com">Get in touch <span>↗</span></a>
   </header>
@@ -27,9 +28,10 @@
     <section class="hero section-wrap">
       <div class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER · C++ / SYSTEMS</div>
       <h1>Building software<br>closer to the <em>metal.</em></h1>
-      <p class="hero-copy">I'm Rohit, a software engineer focused on C++, systems programming and performance engineering. I enjoy understanding how things work under the hood, finding bottlenecks, and making complex systems simpler and faster.</p>
+      <p class="hero-copy">I'm Rohit, a systems software engineer with 3+ years of experience across EDA and enterprise networking. I work in C++, C and Python on performance-critical applications, Linux debugging, build infrastructure and backend services.</p>
       <div class="hero-actions">
         <a class="button button-dark" href="#work">Explore my work <span>↓</span></a>
+        <a class="text-link" href="assets/Rohit-Singh-Resume.pdf" download>Download resume ↓</a>
         <a class="text-link" href="https://github.com/rohit4myself" target="_blank" rel="noreferrer">GitHub ↗</a>
         <a class="text-link" href="https://www.linkedin.com/in/rohit4myself/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
       </div>
@@ -51,7 +53,7 @@
           <div><div class="company">Synopsys</div><div class="role">Senior R&D Engineer</div></div>
           <div class="date">OCT 2024 — PRESENT</div>
         </div>
-        <p class="experience-intro">Modernizing foundational C++ libraries and platform capabilities used across TCAD products.</p>
+        <p class="experience-intro">Contributing to geometric-engine development and maintaining foundational C++ components across a multi-repository software environment.</p>
         <div class="work-item">
           <h3>Container abstraction redesign</h3>
           <p>Redesigned a foundational key-value container abstraction by removing ordering and uniqueness guarantees that were not required by its consumers. Replaced the tree-based implementation with a flat-container design and coordinated migration across 5+ dependent projects.</p>
@@ -60,9 +62,13 @@
         </div>
         <div class="work-item">
           <h3>TCAD workflow backend</h3>
-          <p>Developed backend services and asynchronous execution pipelines for web-based TCAD workflows, using Python, Docker, Kubernetes and MongoDB.</p>
+          <p>Contributed to a new software platform from initial development, implementing Flask and FastAPI services, containerised components with Docker and MongoDB, and stateful communication over sockets. Exposed native C++ functionality to Python through pybind11 and helped establish testing infrastructure.</p>
         </div>
-        <div class="tags"><span>C++</span><span>Performance</span><span>Data structures</span><span>Python</span><span>Docker</span><span>Kubernetes</span></div>
+        <div class="work-item">
+          <h3>Build and CI modernisation</h3>
+          <p>Migrated a major C++ project from Boost.Build to Make and integrated the build system with dependent projects. Fixed CI workflows across projects, enabled AlmaLinux-based containerised builds and modernised C++ tests to Catch2.</p>
+        </div>
+        <div class="tags"><span>C++</span><span>Performance</span><span>Data structures</span><span>Python</span><span>Flask</span><span>FastAPI</span><span>pybind11</span><span>Docker</span><span>Catch2</span></div>
       </article>
 
       <article class="experience-card">
@@ -91,7 +97,7 @@
             <p>Investigated memory corruption, leaks, race conditions, forwarding and scale issues using GDB, Wireshark, Spirent and core-dump analysis.</p>
           </div>
         </div>
-        <div class="tags"><span>C</span><span>Linux</span><span>Networking</span><span>TCP/IP</span><span>GDB</span><span>Wireshark</span></div>
+        <div class="tags"><span>C</span><span>Linux</span><span>Networking</span><span>TCP/IP</span><span>GDB</span><span>Wireshark</span><span>Spirent</span></div>
       </article>
     </section>
 
@@ -198,19 +204,19 @@
       <div class="about-grid">
         <div class="about-copy">
           <p>I completed my MS by Research in Computer Science and Engineering at IIT Kanpur, where I worked on formal-methods-driven planning for multi-robot systems. Before that, I studied Information Technology at St. Thomas' College of Engineering & Technology, Kolkata.</p>
-          <p>My professional work has taken me from enterprise networking to TCAD software. Across both, I've gravitated toward foundational components, debugging difficult failures and understanding performance beyond the surface-level symptom.</p>
+          <p>My professional work has taken me from enterprise switching and networking to EDA platform engineering. Across both, I've worked on foundational components, build and CI infrastructure, backend services, debugging difficult failures and performance beyond the surface-level symptom.</p>
           <p>Outside work, I'm interested in systems software, computer architecture, GPU programming and open-source engineering.</p>
         </div>
         <div class="education">
-          <div class="education-item"><span class="date">2020 — 2023</span><h3>MS(R), Computer Science & Engineering</h3><p>Indian Institute of Technology, Kanpur</p><span class="detail">GATE 2020 · AIR 449</span></div>
-          <div class="education-item"><span class="date">2016 — 2020</span><h3>B.Tech, Information Technology</h3><p>St. Thomas' College of Engineering & Technology, Kolkata</p></div>
+          <div class="education-item"><span class="date">2020 — 2023</span><h3>MS(R), Computer Science & Engineering</h3><p>Indian Institute of Technology, Kanpur</p><span class="detail">GATE 2020 · AIR 449 · 8 CGPA</span></div>
+          <div class="education-item"><span class="date">2016 — 2020</span><h3>B.Tech, Information Technology</h3><p>St. Thomas' College of Engineering & Technology, Kolkata</p><span class="detail">7.49 CGPA</span></div>
         </div>
       </div>
       <div class="skills">
         <div><span class="meta-label">LANGUAGES</span><p>C++ · C · Python · Bash</p></div>
-        <div><span class="meta-label">SYSTEMS</span><p>Linux · Concurrency · Memory management · Performance</p></div>
+        <div><span class="meta-label">SYSTEMS & BUILD</span><p>Linux · C++20 · STL · Concurrency · CMake · Make · Catch2 · Boost.Build</p></div>
         <div><span class="meta-label">NETWORKING</span><p>TCP/IP · VLAN · STP/RSTP · LACP</p></div>
-        <div><span class="meta-label">TOOLS & PLATFORMS</span><p>GDB · perf · Wireshark · Spirent · CMake · Docker · Kubernetes · MongoDB</p></div>
+        <div><span class="meta-label">TOOLS & BACKEND</span><p>GDB · Wireshark · Spirent · Flask · FastAPI · pybind11 · Docker · Kubernetes · MongoDB</p></div>
       </div>
     </section>
 
